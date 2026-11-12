@@ -1,0 +1,681 @@
+.comunidad-hero{
+    position: relative;
+    display: flex;
+    min-height: 390px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 72px 24px;
+    background: linear-gradient(135deg, #f8dce8 0%, #eee4fa 55%, #dff2e9 100%);
+    color: #713844;
+    text-align: center;
+}
+
+.hero-brillitos,
+.hero-decoracion,
+.comparte-decoracion{
+    color: rgb(113 56 68 / 20%);
+    font-size: clamp(24px, 5vw, 46px);
+}
+
+.hero-brillitos{
+    margin-bottom: 20px;
+}
+
+.hero-decoracion{
+    position: absolute;
+    right: 9%;
+    bottom: 20px;
+    transform: rotate(15deg);
+}
+
+.comunidad-eyebrow{
+    color: #9c5970;
+    font-family: 'Salted Fries', Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1.4px;
+}
+
+.comunidad-hero h1{
+    max-width: 860px;
+    margin: 12px 0;
+    font-family: 'Salted Fries', Arial, sans-serif;
+    font-size: clamp(36px, 6vw, 64px);
+    line-height: 1.1;
+}
+
+.comunidad-hero > p:not(.comunidad-eyebrow){
+    max-width: 700px;
+    margin: 10px 0 24px;
+    font-size: clamp(16px, 2vw, 19px);
+    line-height: 1.7;
+}
+
+.comunidad-cta{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 22px;
+    border: 1px solid #61bfbe;
+    border-radius: 999px;
+    background: #baded5;
+    box-shadow: 0 4px 12px rgb(74 29 41 / 12%);
+    color: #55333a;
+    font: 16px 'Salted Fries', Arial, sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.comunidad-cta:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 7px 16px rgb(74 29 41 / 16%);
+}
+
+.discord-seccion{
+    padding: 48px 24px;
+    background: linear-gradient(135deg, #fff 0%, #f5f0ff 52%, #fff3f7 100%);
+}
+
+.discord-tarjeta{
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    max-width: 1060px;
+    align-items: center;
+    gap: 24px;
+    margin: 0 auto;
+    padding: 28px 32px;
+    border: 6px solid #fff;
+    border-radius: 20px;
+    background: linear-gradient(120deg, #e6e0ff 0%, #f5edff 58%, #fff0f5 100%);
+    box-shadow: 0 8px 24px rgb(88 72 145 / 14%);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.discord-tarjeta:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgb(88 72 145 / 20%), 0 0 22px rgb(151 119 229 / 25%);
+}
+
+.discord-icono{
+    display: grid;
+    width: 82px;
+    height: 82px;
+    place-items: center;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    background: #5865f2;
+    box-shadow: 0 5px 13px rgb(88 101 242 / 24%);
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.discord-icono svg{
+    width: 48px;
+    height: auto;
+}
+
+.discord-tarjeta:hover .discord-icono{
+    transform: rotate(-8deg) scale(1.08);
+}
+
+.discord-contenido{
+    min-width: 0;
+    color: #51416f;
+}
+
+.discord-etiqueta{
+    margin: 0 0 9px;
+    color: #7862a5;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.discord-servidor{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.discord-avatar{
+    display: grid;
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    place-items: center;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #5865f2, #9a7be8);
+    box-shadow: 0 3px 8px rgb(78 61 133 / 20%);
+    color: #fff;
+    font-family: 'Salted Fries', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.discord-servidor h2{
+    margin: 0;
+    color: #49365f;
+    font-family: 'Salted Fries', Arial, sans-serif;
+    font-size: clamp(20px, 3vw, 27px);
+}
+
+.discord-estado{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 10px;
+    border: 1px solid #bce7c9;
+    border-radius: 999px;
+    background: #e8f8ed;
+    color: #287c49;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.discord-estado > span{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #43b581;
+    box-shadow: 0 0 0 3px rgb(67 181 129 / 15%);
+}
+
+.discord-descripcion{
+    max-width: 610px;
+    margin: 10px 0 0;
+    color: #625475;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.discord-boton{
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 12px 19px;
+    border: 2px solid #fff;
+    border-radius: 999px;
+    background: #5865f2;
+    box-shadow: 0 5px 13px rgb(88 101 242 / 25%);
+    color: #fff;
+    font: 16px 'Salted Fries', Arial, sans-serif;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.discord-boton:hover{
+    transform: scale(1.05);
+    background: #4752c4;
+    box-shadow: 0 8px 18px rgb(88 101 242 / 32%);
+}
+
+.discord-boton:focus-visible{
+    outline: 3px solid #4a9eb0;
+    outline-offset: 4px;
+}
+
+.comunidad-cta:focus-visible,
+.me-encanta:focus-visible,
+.opcion-encuesta:focus-visible,
+.comparte-formulario input:focus-visible,
+.comparte-formulario textarea:focus-visible{
+    outline: 3px solid #4a9eb0;
+    outline-offset: 3px;
+}
+
+.comunidad-seccion{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 76px 28px;
+}
+
+.seccion-titulo{
+    max-width: 760px;
+    margin: 0 auto 34px;
+    color: #713844;
+    text-align: center;
+}
+
+.seccion-titulo h2,
+.comparte-intro h2{
+    margin: 8px 0;
+    font-family: 'Salted Fries', Arial, sans-serif;
+    font-size: clamp(30px, 4vw, 42px);
+}
+
+.seccion-titulo > p:last-child,
+.comparte-intro > p:last-child{
+    color: #654d51;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.muro-grid{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.fan-card{
+    overflow: hidden;
+    padding: 12px;
+    border: 1px solid #f1c7d1;
+    border-radius: 14px;
+    background: #fffaf8;
+    box-shadow: 0 6px 18px rgb(74 29 41 / 10%);
+    transform: rotate(-1deg);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fan-card:nth-child(even){
+    transform: rotate(1deg);
+}
+
+.fan-card:hover{
+    z-index: 1;
+    transform: translateY(-5px) rotate(0);
+    box-shadow: 0 12px 24px rgb(74 29 41 / 15%);
+}
+
+.fan-card > img,
+.fan-card-placeholder{
+    display: grid;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    place-items: center;
+    border-radius: 8px;
+    background: #f7eaf0;
+    object-fit: cover;
+}
+
+.fan-card-lavanda > img{ background-color: #eee5fa; }
+.fan-card-menta > img{ background-color: #e2f1e8; }
+.fan-card-rosa > img{ background-color: #f9e3e7; }
+
+.fan-card-contenido{
+    padding: 14px 4px 4px;
+    color: #63474e;
+}
+
+.fan-etiqueta{
+    display: inline-block;
+    margin-bottom: 7px;
+    padding: 4px 9px;
+    border-radius: 999px;
+    background: #f8e2eb;
+    color: #8d4961;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.fan-card-contenido p{
+    min-height: 54px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.me-encanta{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    padding: 7px 10px;
+    border: 1px solid #e8bbc9;
+    border-radius: 999px;
+    background: #fff;
+    color: #864b5d;
+    font: inherit;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.me-encanta[aria-pressed="true"]{
+    background: #f8dce8;
+    color: #a53154;
+}
+
+.me-encanta[aria-pressed="true"] > span:first-child{
+    font-size: 15px;
+}
+
+.encuestas-seccion{
+    background: linear-gradient(135deg, #f2eafb, #fff2f5);
+}
+
+.encuestas-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.encuesta-card{
+    padding: 24px;
+    border: 1px solid #e2d2ee;
+    border-radius: 18px;
+    background: rgb(255 255 255 / 84%);
+    box-shadow: 0 5px 16px rgb(74 29 41 / 8%);
+}
+
+.encuesta-categoria{
+    color: #94658e;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.encuesta-card h3{
+    min-height: 52px;
+    margin: 9px 0 16px;
+    color: #713844;
+    font-family: 'Salted Fries', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.opciones-encuesta{
+    display: grid;
+    gap: 10px;
+}
+
+.opcion-encuesta{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+    overflow: hidden;
+    padding: 10px 12px;
+    border: 1px solid #e9ddeb;
+    border-radius: 10px;
+    background: #fff;
+    color: #604750;
+    font: inherit;
+    font-size: 13px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.opcion-encuesta:hover:not(:disabled){
+    border-color: #c7a6d9;
+    background: #fbf7ff;
+}
+
+.opcion-encuesta:disabled{
+    cursor: default;
+}
+
+.opcion-resultado{
+    display: none;
+    font-weight: 700;
+}
+
+.resultados-visibles .opcion-resultado{
+    display: inline;
+}
+
+.barra-progreso{
+    grid-column: 1 / -1;
+    display: none;
+    height: 7px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #f0e9f2;
+}
+
+.resultados-visibles .barra-progreso{
+    display: block;
+}
+
+.barra-relleno{
+    display: block;
+    width: 0;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #e8aabe, #bba2d5);
+    transition: width 0.35s ease;
+}
+
+.encuesta-mensaje{
+    min-height: 18px;
+    margin-top: 14px;
+    color: #835667;
+    font-size: 12px;
+}
+
+.encuestas-nota{
+    margin-top: 20px;
+    color: #735a68;
+    font-size: 13px;
+    text-align: center;
+}
+
+.eventos-grid{
+    display: grid;
+    gap: 16px;
+}
+
+.evento-card{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #efc8d3;
+    border-radius: 16px;
+    background: #fff9f8;
+    box-shadow: 0 4px 14px rgb(74 29 41 / 7%);
+}
+
+.evento-lavanda{ border-color: #ddd0ec; background: #fbf8ff; }
+.evento-menta{ border-color: #c8e3d8; background: #f6fcf8; }
+
+.evento-fecha{
+    display: flex;
+    width: 76px;
+    min-width: 76px;
+    height: 82px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #f7dce5;
+    color: #713844;
+}
+
+.evento-lavanda .evento-fecha{ background: #eee4f8; }
+.evento-menta .evento-fecha{ background: #e0f0e7; }
+
+.evento-fecha span{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.evento-fecha strong{
+    font-family: 'Salted Fries', Arial, sans-serif;
+    font-size: 34px;
+    line-height: 1;
+}
+
+.evento-tipo{
+    color: #a05c72;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+}
+
+.evento-info h3{
+    margin: 4px 0;
+    color: #713844;
+    font-family: 'Salted Fries', Arial, sans-serif;
+    font-size: 21px;
+}
+
+.evento-info p,
+.evento-lugar{
+    color: #654d51;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.evento-lugar{
+    display: inline-block;
+    margin-top: 7px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.comparte-seccion{
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1fr);
+    gap: 36px;
+    max-width: 1180px;
+    align-items: center;
+    margin: 0 auto 76px;
+    padding: 44px;
+    border: 1px solid #edcbd8;
+    border-radius: 24px;
+    background: linear-gradient(135deg, #fff0f3, #f1eafa 62%, #e8f4ec);
+    box-shadow: 0 8px 24px rgb(74 29 41 / 9%);
+}
+
+.comparte-intro{
+    color: #713844;
+}
+
+.comparte-intro h2{
+    font-size: clamp(30px, 4vw, 40px);
+}
+
+.comparte-decoracion{
+    grid-column: 1 / -1;
+    height: 0;
+    text-align: right;
+}
+
+.comparte-formulario{
+    display: grid;
+    gap: 9px;
+    padding: 24px;
+    border: 1px solid rgb(236 205 219 / 75%);
+    border-radius: 17px;
+    background: rgb(255 255 255 / 82%);
+}
+
+.comparte-formulario label{
+    margin-top: 4px;
+    color: #704653;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.comparte-formulario input,
+.comparte-formulario textarea{
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #dfc5d2;
+    border-radius: 10px;
+    background: #fffdfd;
+    color: #55333a;
+    font: inherit;
+    font-size: 14px;
+}
+
+.comparte-formulario input[type="file"]{
+    padding: 8px;
+    font-size: 12px;
+}
+
+.comparte-formulario textarea{
+    resize: vertical;
+}
+
+.formulario-nota,
+.formulario-mensaje{
+    color: #785e68;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.comparte-formulario .comunidad-cta{
+    justify-self: start;
+    margin-top: 5px;
+}
+
+.formulario-mensaje{
+    min-height: 18px;
+    color: #39705c;
+    font-weight: 700;
+}
+
+.fan-card-nueva{
+    animation: aparecer-tarjeta 0.35s ease-out;
+}
+
+.fan-card-placeholder{
+    color: #b26c88;
+    font-size: 60px;
+}
+
+@keyframes aparecer-tarjeta{
+    from{ opacity: 0; transform: translateY(10px) scale(0.97); }
+    to{ opacity: 1; transform: translateY(0) rotate(-1deg) scale(1); }
+}
+
+@media (max-width: 850px){
+    .muro-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .encuestas-grid{ grid-template-columns: 1fr; }
+    .encuesta-card h3{ min-height: 0; }
+    .comparte-seccion{ margin: 0 20px 56px; padding: 30px; }
+    .discord-tarjeta{ grid-template-columns: auto minmax(0, 1fr); gap: 18px; }
+    .discord-boton{ grid-column: 2; justify-self: start; }
+}
+
+@media (max-width: 560px){
+    .comunidad-hero{ min-height: 360px; padding: 54px 22px; }
+    .comunidad-seccion{ padding: 56px 20px; }
+    .discord-seccion{ padding: 34px 16px; }
+    .discord-tarjeta{ grid-template-columns: 1fr; justify-items: center; gap: 16px; padding: 24px 18px; text-align: center; }
+    .discord-icono{ width: 70px; height: 70px; }
+    .discord-icono svg{ width: 41px; }
+    .discord-servidor{ justify-content: center; }
+    .discord-boton{ grid-column: auto; justify-self: center; }
+    .muro-grid{ gap: 12px; }
+    .fan-card{ padding: 8px; }
+    .fan-card-contenido{ padding-top: 10px; }
+    .fan-card-contenido p{ min-height: 68px; font-size: 12px; }
+    .me-encanta{ gap: 3px; padding: 6px; font-size: 10px; }
+    .evento-card{ align-items: flex-start; gap: 13px; padding: 15px; }
+    .evento-fecha{ width: 62px; min-width: 62px; height: 70px; }
+    .evento-fecha strong{ font-size: 29px; }
+    .evento-info h3{ font-size: 18px; }
+    .evento-info p{ font-size: 13px; }
+    .comparte-seccion{ grid-template-columns: 1fr; gap: 20px; margin: 0 14px 44px; padding: 23px; }
+    .comparte-decoracion{ display: none; }
+    .comparte-formulario{ padding: 18px; }
+}
+
+@media (prefers-reduced-motion: reduce){
+    .fan-card,
+    .me-encanta,
+    .comunidad-cta,
+    .barra-relleno,
+    .discord-tarjeta,
+    .discord-icono,
+    .discord-boton{
+        transition: none;
+    }
+
+    .discord-tarjeta:hover,
+    .discord-tarjeta:hover .discord-icono,
+    .discord-boton:hover{
+        transform: none;
+    }
+
+    .fan-card-nueva{ animation: none; }
+}

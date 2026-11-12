@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>KUYIRA</title>
+
+	<!-- FontAwesome para los íconos de redes -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="stylesheet" href="webkuyira.css">
+
+</head>
+<body>
+
+	<!-- Tu parte: Encabezado y Navegación -->
+	<header class="encabezado">
+		<a class="logo-header" href="index.html" aria-label="Kuyira, inicio">
+			<img src="imagenes/LogoKuyira.png" alt="Kuyira">
+		</a>
+
+		<nav class="navegacion" aria-label="Navegación principal">
+			<a href="#">BL</a>
+			<a href="#">K-POP</a>
+			<a href="#">Anime</a>
+			<a href="#">Mangas</a>
+			<a href="multifandom.html">MULTIFANDOM</a>
+			<a href="#">Korean Food</a>
+			<a href="#">Doramas</a>
+			<a class="lo-nuevo" href="#">✨ Lo Nuevo</a>
+		</nav>
+	</header>
+
+	<main>
+		<section class="banner-carrusel" aria-label="Promociones de Kuyira" aria-roledescription="carrusel">
+			<div class="banner-carrusel-ventana">
+				<div class="banner-carrusel-pista">
+					<div class="banner-carrusel-slide" role="group" aria-roledescription="diapositiva" aria-label="1 de 4">
+						<img src="assets/banners/Banner1.webp" alt="Promoción destacada de Kuyira">
+					</div>
+					<div class="banner-carrusel-slide" role="group" aria-roledescription="diapositiva" aria-label="2 de 4">
+						<img src="assets/banners/Banner2.webp" alt="Novedades de Kuyira">
+					</div>
+					<div class="banner-carrusel-slide" role="group" aria-roledescription="diapositiva" aria-label="3 de 4">
+						<img src="assets/banners/Banner3.webp" alt="Productos de Kuyira">
+					</div>
+					<div class="banner-carrusel-slide" role="group" aria-roledescription="diapositiva" aria-label="4 de 4">
+						<img src="assets/banners/Banner4.webp" alt="Descubre más en Kuyira">
+					</div>
+				</div>
+			</div>
+			<button class="banner-carrusel-flecha banner-carrusel-anterior" type="button" aria-label="Banner anterior">
+				<span aria-hidden="true">‹</span>
+			</button>
+			<button class="banner-carrusel-flecha banner-carrusel-siguiente" type="button" aria-label="Banner siguiente">
+				<span aria-hidden="true">›</span>
+			</button>
+			<div class="banner-carrusel-indicadores" aria-label="Seleccionar banner">
+				<button class="banner-carrusel-punto" type="button" aria-label="Mostrar banner 1" aria-current="true"></button>
+				<button class="banner-carrusel-punto" type="button" aria-label="Mostrar banner 2"></button>
+				<button class="banner-carrusel-punto" type="button" aria-label="Mostrar banner 3"></button>
+				<button class="banner-carrusel-punto" type="button" aria-label="Mostrar banner 4"></button>
+			</div>
+		</section>
+
+		<section class="categorias-grid" aria-label="Categorías destacadas">
+			<a class="categoria" href="#" aria-label="Explorar BL">
+				<img src="imagenes/BOTON-B.webp" alt="Categoría BL">
+			</a>
+			<a class="categoria" href="#" aria-label="Explorar Korean Food">
+				<img src="imagenes/BOTON-E.webp" alt="Categoría Korean Food">
+			</a>
+			<a class="categoria" href="#" aria-label="Explorar Mangas">
+				<img src="imagenes/BOTON-F.webp" alt="Categoría Mangas">
+			</a>
+		</section>
+
+		<section class="destacados" id="productos-destacados" aria-labelledby="titulo-destacados">
+			<div class="destacados-encabezado">
+				<p class="destacados-etiqueta">IMPERDIBLES</p>
+				<h2 id="titulo-destacados">PRODUCTOS DESTACADOS</h2>
+				<a class="boton-ver-mas" href="#productos-destacados">Ver Más</a>
+			</div>
+
+			<div class="productos-grid">
+				<article class="producto-card">
+					<img src="imagenes/BulletJournal.jpg" alt="Bullet journal Ganbare! Nakamura-kun!! 01">
+					<h4>Bullet journal Ganbare! Nakamura-kun!! 01</h4>
+					<p class="precio">S/ 34.00</p>
+				</article>
+				<article class="producto-card">
+					<img src="imagenes/Stiker A6.jpg" alt="Stiker A6 El chico que me gusta no es un chico">
+					<h4>Stiker A6 El chico que me gusta no es un chico</h4>
+					<p class="precio">S/ 5.00</p>
+				</article>
+				<article class="producto-card">
+					<img src="imagenes/Peluche Barco One Piece.jpg" alt="Peluche Barco One Piece Sunny">
+					<h4>Peluche Barco One Piece Sunny</h4>
+					<p class="precio">S/ 59.00</p>
+				</article>
+				<article class="producto-card">
+					<img src="imagenes/Kimetsu No Yaiba.jpg" alt="Figura Kimetsu no Yaiba Chibi">
+					<h4>Figura Kimetsu no Yaiba Chibi</h4>
+					<p class="precio">S/ 29.00</p>
+				</article>
+				<article class="producto-card">
+					<img src="imagenes/Almohada La Granja.jpg" alt="Almohada La Granja del Señor A">
+					<h4>Almohada La Granja del Señor A</h4>
+					<p class="precio">S/ 24.00</p>
+				</article>
+				<article class="producto-card">
+					<img src="imagenes/Box La Noche.jpg" alt="Box - La noche que llega a la ribera">
+					<h4>Box - La noche que llega a la ribera</h4>
+					<p class="precio">S/ 34.00</p>
+				</article>
+				<article class="producto-card">
+					<img src="imagenes/Photocard Stray Kids.jpg" alt="Photocard Stray Kids- This &amp; That">
+					<h4>Photocard Stray Kids- This &amp; That</h4>
+					<p class="precio">S/ 34.00</p>
+				</article>
+				<article class="producto-card">
+					<img src="imagenes/Figura Acrilica BTS.jpg" alt="Figura acrílica Bts 06">
+					<h4>Figura acrílica Bts 06</h4>
+					<p class="precio">S/ 15.00</p>
+				</article>
+			</div>
+		</section>
+	</main>
+
+	<!-- Parte del Footer (con los ajustes de tu compañera) -->
+	<footer class="footer">
+
+		<div class="footer-contenido">
+			<div class="logo">
+				<img src="imagenes/letra.png" alt="Logo Letra">
+			</div>
+
+			<div class="lado-derecho">
+				<h3>Síguenos</h3>
+				<div class="redes">
+					<a href="https://www.instagram.com/_kuyira_?cplk=aG9kZ3Iydm5jbHJ6" aria-label="Instagram de Kuyira">
+						<i class="fa-brands fa-instagram"></i>
+						<span>@_kuyira_</span>
+					</a>
+					<a href="https://www.tiktok.com/@kuyira240?_r=1&_t=ZS-9BKOYiJdEWM" aria-label="TikTok de Kuyira">
+						<i class="fa-brands fa-tiktok"></i>
+						<span>@kuyira240</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="libro">
+				<a href="#">
+					<img src="imagenes/kuyira.png" alt="Libro de reclamaciones">
+				</a>
+			</div>
+
+			<div class="columna">
+				<h3>Caracteristicas</h3>
+				<a href="#">Novedades</a>
+				<a href="#">Best Sellers</a>
+				<a href="#">Figuras</a>
+			</div>
+
+			<div class="columna">
+				<h3>Aprender mas</h3>
+				<a href="#">Sobre Nosotros</a>
+				<a href="#">Explorar Fandoms</a>
+				<a href="#">Noticias</a>
+				<a href="#">Guia de Tallas</a>
+			</div>
+
+			<div class="columna">
+				<h3>Aprender mas</h3>
+				<a href="#">Contacto/Ayuda</a>
+				<a href="#">Politica de devolucion</a>
+				<a href="#">Terminos y condiciones</a>
+			</div>
+
+		</div>
+
+		<div class="aroba">
+			<p> KUYIRA @ 2026</p>
+		</div>
+		
+	</footer>
+
+	<div class="asistente-kitsune">
+		<section class="chat-kitsune" id="chat-kitsune" aria-label="Chat con Kitsune-chan" hidden>
+			<header class="chat-kitsune-cabecera">
+				<h2>Kitsune-chan 🦊</h2>
+				<button class="chat-kitsune-cerrar" type="button" aria-label="Cerrar chat">×</button>
+			</header>
+			<div class="chat-kitsune-mensajes" aria-live="polite" aria-relevant="additions"></div>
+			<form class="chat-kitsune-formulario">
+				<label class="sr-only" for="chat-kitsune-texto">Escribe tu mensaje</label>
+				<input id="chat-kitsune-texto" type="text" placeholder="Escribe tu mensaje..." autocomplete="off" required>
+				<button type="submit" aria-label="Enviar mensaje"><i class="fa-solid fa-paper-plane"></i></button>
+			</form>
+		</section>
+		<button class="chat-kitsune-toggle" type="button" aria-label="Abrir chat con Kitsune-chan" aria-expanded="false" aria-controls="chat-kitsune">
+			<img src="imagenes/kitsune-avatar.png" alt="Avatar de Kitsune-chan">
+			<span class="chat-kitsune-fallback" aria-hidden="true">🦊</span>
+		</button>
+	</div>
+
+	<script>
+		(() => {
+			const carousel = document.querySelector('.banner-carrusel');
+			const track = carousel.querySelector('.banner-carrusel-pista');
+			const slides = Array.from(carousel.querySelectorAll('.banner-carrusel-slide'));
+			const dots = Array.from(carousel.querySelectorAll('.banner-carrusel-punto'));
+			const previous = carousel.querySelector('.banner-carrusel-anterior');
+			const next = carousel.querySelector('.banner-carrusel-siguiente');
+			const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+			let currentIndex = 0;
+			let autoplay;
+
+			const showSlide = (index) => {
+				currentIndex = (index + slides.length) % slides.length;
+				track.style.transform = `translateX(-${currentIndex * 100}%)`;
+				dots.forEach((dot, dotIndex) => {
+					if (dotIndex === currentIndex) {
+						dot.setAttribute('aria-current', 'true');
+					} else {
+						dot.removeAttribute('aria-current');
+					}
+				});
+			};
+
+			const stopAutoplay = () => window.clearInterval(autoplay);
+			const startAutoplay = () => {
+				stopAutoplay();
+				if (!reducedMotion && !carousel.matches(':hover') && !carousel.contains(document.activeElement)) {
+					autoplay = window.setInterval(() => showSlide(currentIndex + 1), 4000);
+				}
+			};
+
+			previous.addEventListener('click', () => showSlide(currentIndex - 1));
+			next.addEventListener('click', () => showSlide(currentIndex + 1));
+			dots.forEach((dot, index) => {
+				dot.addEventListener('click', () => showSlide(index));
+			});
+			carousel.addEventListener('mouseenter', stopAutoplay);
+			carousel.addEventListener('mouseleave', startAutoplay);
+			carousel.addEventListener('focusin', stopAutoplay);
+			carousel.addEventListener('focusout', (event) => {
+				if (!carousel.contains(event.relatedTarget)) startAutoplay();
+			});
+			startAutoplay();
+		})();
+	</script>
+	<script>
+		(() => {
+			const widget = document.querySelector('.asistente-kitsune');
+			const toggle = widget.querySelector('.chat-kitsune-toggle');
+			const chat = widget.querySelector('.chat-kitsune');
+			const close = widget.querySelector('.chat-kitsune-cerrar');
+			const form = widget.querySelector('.chat-kitsune-formulario');
+			const input = widget.querySelector('#chat-kitsune-texto');
+			const messages = widget.querySelector('.chat-kitsune-mensajes');
+			const avatar = toggle.querySelector('img');
+			const fallback = toggle.querySelector('.chat-kitsune-fallback');
+
+			const addMessage = (text, sender) => {
+				const message = document.createElement('p');
+				message.className = `chat-kitsune-mensaje ${sender}`;
+				message.textContent = text;
+				messages.append(message);
+				messages.scrollTop = messages.scrollHeight;
+			};
+
+			const setChatOpen = (isOpen) => {
+				chat.hidden = !isOpen;
+				toggle.setAttribute('aria-expanded', String(isOpen));
+				toggle.setAttribute('aria-label', isOpen ? 'Cerrar chat con Kitsune-chan' : 'Abrir chat con Kitsune-chan');
+				if (isOpen) input.focus();
+			};
+
+			const getReply = (text) => {
+				const query = text.toLocaleLowerCase('es').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+				if (query.includes('envio') || query.includes('envios') || query.includes('entrega')) {
+					return '¡Hacemos envíos! Escríbenos por nuestras redes sociales para consultar cobertura, costo y tiempo de entrega 🦊';
+				}
+				if (query.includes('categoria') || query.includes('fandom') || query.includes('anime') || query.includes('manga')) {
+					return 'Tenemos categorías como BL, K-POP, Anime, Mangas, Multifandom, Korean Food y Doramas. ¡Cuéntame qué te gusta! ✨';
+				}
+				if (query.includes('catalogo') || query.includes('producto') || query.includes('disponible')) {
+					return 'Puedes explorar los productos destacados y las novedades en esta página. Si buscas algo específico, consúltanos por Instagram o TikTok 💕';
+				}
+				return '¡Puedo ayudarte con envíos, categorías y nuestro catálogo! ¿Qué te gustaría saber? 🦊';
+			};
+
+			avatar.addEventListener('error', () => {
+				avatar.hidden = true;
+				fallback.hidden = false;
+			});
+			fallback.hidden = true;
+
+			toggle.addEventListener('click', () => setChatOpen(chat.hidden));
+			close.addEventListener('click', () => setChatOpen(false));
+			addMessage('¡Hola! Soy Kitsune-chan 🦊 ¿Te ayudo con envíos, categorías o el catálogo?', 'asistente');
+
+			form.addEventListener('submit', (event) => {
+				event.preventDefault();
+				const text = input.value.trim();
+				if (!text) return;
+				addMessage(text, 'usuario');
+				input.value = '';
+				window.setTimeout(() => addMessage(getReply(text), 'asistente'), 350);
+			});
+		})();
+	</script>
+</body>
+</html>
