@@ -397,6 +397,10 @@ body{
     color: #e6005c;
 }
 
+.redes a:nth-child(2){
+    color: red;
+}
+
 .redes a:hover{
     transform: translateX(4px);
 }
