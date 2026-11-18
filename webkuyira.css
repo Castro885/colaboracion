@@ -6,8 +6,24 @@
     font-display: swap;
 }
 
+@font-face{
+    font-family: 'Matcha Cih';
+    src: url('fonts/Matcha Cih.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'ultraproxi';
+    src: url('fonts/ultraproxi sb it.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root{
-    --pink-salt: #FAE3D9;
+    --pink-salt: #fef4f1;
     --rosada: #FFB6B9;
     --bounty: #4ABBF3;
     --sea-green: #61BFBE;
@@ -50,12 +66,12 @@ body{
     align-items: center;
     justify-content: flex-end;
     flex-wrap: wrap;
-    gap: 10px 18px;
+    gap: 20px 50px;
 }
 
 .navegacion a{
-    color: #713844;
-    font-family: 'Salted Fries', sans-serif;
+    color: #ffffff;
+    font-family: 'Matcha Cih', sans-serif;
     font-size: 19px;
     text-decoration: none;
     white-space: nowrap;
@@ -68,10 +84,9 @@ body{
 .navegacion .lo-nuevo{
     padding: 7px 13px;
     border-radius: 999px;
-    background-color: var(--oceana);
-    border: 1px solid var(--sea-green);
+    background-color: var(--pink-salt);
     box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
-    color: #713844;
+    color: #f88488;
 }
 
 .navegacion .lo-nuevo:hover{
@@ -224,7 +239,7 @@ body{
 .categoria{
     display: block;
     overflow: hidden;
-    border: 2px solid var(--sea-green);
+    /*border: 2px solid var(--sea-green);*/
     border-radius: 14px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -261,17 +276,17 @@ body{
 }
 
 .destacados-etiqueta{
-    color: #286b8a;
-    font-family: 'Salted Fries', Arial, sans-serif;
-    font-size: 16px;
+    color: #e66580;
+    font-family: 'Matcha Cih', Arial, sans-serif;
+    font-size: 26px;
     letter-spacing: 2px;
 }
 
 .destacados-encabezado h2{
-    color: #713844;
+    color: #000000;
     font-family: 'Salted Fries', Arial, sans-serif;
     font-size: clamp(26px, 4vw, 42px);
-    border-bottom: 3px solid var(--rosada);
+    /*border-bottom: 3px solid var(--rosada);*/
     padding-bottom: 6px;
 }
 
@@ -279,11 +294,11 @@ body{
     display: inline-block;
     margin-top: 6px;
     padding: 10px 24px;
-    border: 2px solid var(--bounty);
+    border: 2px solid #e66580;
     border-radius: 999px;
-    background-color: var(--bounty);
-    color: #173b4b;
-    font-family: 'Salted Fries', Arial, sans-serif;
+    background-color: #e66580;
+    color: #ffffff;
+    font-family: 'ultraproxi', Arial, sans-serif;
     text-decoration: none;
     transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
@@ -291,7 +306,7 @@ body{
 .boton-ver-mas:hover{
     transform: translateY(-2px);
     background-color: transparent;
-    color: #286b8a;
+    color: #e66580;
 }
 
 .productos-grid{
@@ -303,16 +318,17 @@ body{
 .producto-card{
     overflow: hidden;
     padding: 14px;
-    border: 1px solid var(--sea-green);
+    /*border: 1px solid var(--sea-green);*/
     border-radius: 12px;
-    background-color: var(--oceana);
+    /*background-color: var(--oceana);*/
+    background-color:#ffffff;
     box-shadow: 0 2px 12px rgb(97 191 190 / 18%);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .producto-card:hover{
     transform: translateY(-5px);
-    box-shadow: 0 10px 24px rgb(74 187 243 / 24%);
+    box-shadow: 0 10px 24px rgba(245, 168, 216, 0.24);
 }
 
 .producto-card img{
@@ -327,8 +343,8 @@ body{
 .producto-card h4{
     margin-top: 14px;
     color: #555;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
+    font-family: 'ultraproxi', sans-serif;
+    font-size: 10px;
     font-style: italic;
     font-weight: 600;
     line-height: 1.4;
@@ -337,7 +353,7 @@ body{
 .producto-card .precio{
     margin-top: 9px;
     color: #555;
-    font-family: Arial, sans-serif;
+    font-family: 'ultraproxi', sans-serif;
     font-size: 12px;
     font-style: italic;
     font-weight: 600;
@@ -346,7 +362,7 @@ body{
 .footer{
     width: 100%;
     min-height: 250px;
-    border-top: 3px solid var(--sea-green);
+    /*border-top: 3px solid var(--sea-green);*/
     background-color: var(--pink-salt);
     padding: 32px 7% 45px 7%;
     position: relative;
@@ -398,7 +414,7 @@ body{
 }
 
 .redes a:nth-child(2){
-    color: red;
+    color: #d43131;
 }
 
 .redes a:hover{
