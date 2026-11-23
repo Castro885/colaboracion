@@ -251,20 +251,14 @@ body{
 
 .banner{
     width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    display: block;
+    height: 100%;
     overflow: hidden;
 }
 
 .banner img{
     width: 100%;
-    max-width: 100%;
     height: auto;
     display: block;
-    object-fit: cover;
 }
 
 .main-container{
